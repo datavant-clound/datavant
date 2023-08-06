@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu a {
+    color: blue;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .menu-esquerda {
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-direita {
+    display: flex;
+    align-items: center;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .menu {
+      flex-direction: column;
+    }
+  
+    .menu-esquerda,
+    .menu-direita {
+      flex-direction: row;
+      margin-top: 10px;
+    }
+  }
+  
